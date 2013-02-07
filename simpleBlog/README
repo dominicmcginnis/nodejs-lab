@@ -1,0 +1,1 @@
+This tutorial uses nodejs + couchDB + bogart to make a blog.  The tutorial is from http://howtonode.org/bogart-couchdb.  As I implemetn it, I'm going to look at swapping out couchDb and replacing it with mongoDb.
