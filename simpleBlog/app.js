@@ -1,5 +1,5 @@
 var bogart   = require('bogart');
-var Q        = require('promised-io/lib/promise');
+var Q        = require('promised-io/promise');
 var mongoose = require('mongoose');
  
 var PostSchema = new mongoose.Schema({
