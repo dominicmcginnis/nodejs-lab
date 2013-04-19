@@ -19,6 +19,10 @@ var app = bogart.router(function(get, post, put, destroy) {
  
   var client     = mongoose.connect('mongodb://localhost/test')
     , viewEngine = bogart.viewEngine('mustache');
+
+get('/', function(req) {
+  return bogart.redirect('/posts');
+});
  
   get('/posts', function(req) {
     return Q.execute(Post.find.bind(Post)).then(function(docs) {
